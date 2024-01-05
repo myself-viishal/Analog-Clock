@@ -13,8 +13,8 @@ body {
     background: #090909;
 }
 .main {
-    width: 50%;
-    /* height: 50%; */
+    width: auto;
+    height: 50%;
     display: flex;
     justify-content: center;
     position: relative;
