@@ -25,6 +25,7 @@ body {
         2px 2px 1px aqua;
     border-radius: 50%;
     border: 10px solid #090909;
+    animation: blink 1s cubic-bezier(1, -0.4, 0, 0.99) infinite;
 }
 .main img {
     width: 100%;
@@ -95,4 +96,26 @@ body {
     width: 3.5px;
     height: 60% !important;
     background: #0075fa80;
+}
+
+@keyframes blink {
+    0% {
+        box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+            inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+            0em 1.2em 1.2em rgba(0, 0, 0, 0.3),
+            inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 2px 2px 1px aqua,
+            2px 2px 1px aqua;
+    }
+    50% {
+        box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+            inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+            0em 1.2em 1.2em rgba(0, 0, 0, 0.3),
+            inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+            inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+            0em 1.2em 1.2em rgba(0, 0, 0, 0.3),
+            inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
+    }
 }
